@@ -51,7 +51,7 @@ este widget funciona insertando el siguiente código en algún lugar de la pági
                       <iframe class="embed-responsive-item" frameborder="0" src="" width="800"  height="768"></iframe>
                     </div>
                   </div>
-                  <div class="embed-responsive" class="modal-footer">
+                  <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                   </div>
                 </div>
