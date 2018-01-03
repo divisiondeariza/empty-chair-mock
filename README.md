@@ -14,7 +14,8 @@ este widget funciona insertando el siguiente código en algún lugar de la pági
 
                 $( document ).ready(function() {
                     $('.modal').on('show.bs.modal',function(){      
-                      $(this).find('iframe').attr('src','https://divisiondeariza.github.io/empty-chair-widgets/#!/');
+                      $(this).find('iframe').attr('src','https://divisiondeariza.github.io/empty-chair-widgets/#!/');                      
+                      /* $(this).find('iframe').attr('src','http://localhost:9000/#!/');*/
                     });
                   });
             </script>
@@ -46,9 +47,11 @@ este widget funciona insertando el siguiente código en algún lugar de la pági
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                   </div>
                   <div class="modal-body">
-                      <iframe frameborder="0" height="768" scrolling="no" src="" width="800"></iframe>
+                    <div class="embed-responsive embed-responsive-4by3"> 
+                      <iframe class="embed-responsive-item" frameborder="0" src="" width="800"  height="768"></iframe>
+                    </div>
                   </div>
-                  <div class="modal-footer">
+                  <div class="embed-responsive" class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                   </div>
                 </div>
