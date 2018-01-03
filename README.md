@@ -1,62 +1,64 @@
-# [Start Bootstrap - Small Business](https://startbootstrap.com/template-overviews/small-business/)
+# Empty Chair Mock
+El nombre del proyecto no es descriptivo y tampoco me interesa que los sea.
 
-[Small Business](http://startbootstrap.com/template-overviews/small-business/) is a responsive marketing landing page template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
+## Uso
 
-## Preview
+este widget funciona insertando el siguiente código en algún lugar de la página:
 
-[![Small Business Preview](https://startbootstrap.com/assets/img/templates/small-business.jpg)](https://blackrockdigital.github.io/startbootstrap-small-business/)
+```html
+          <div>
+            <link rel="stylesheet" href="http://cdn.jsdelivr.net/bootstrap/3.3.5/css/bootstrap.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <script type="text/javascript">
 
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-small-business/)**
+                $( document ).ready(function() {
+                    $('.modal').on('show.bs.modal',function(){      
+                      $(this).find('iframe').attr('src','https://divisiondeariza.github.io/empty-chair-widgets/#!/');
+                    });
+                  });
+            </script>
+            <style type="text/css">
+              .modal-content {
+                background-color: #000;
+                color: #fff;
+              }
 
-## Status
+              .modal-lg{
+                max-width: 1024px;
+              }
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-small-business/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-small-business.svg)](https://www.npmjs.com/package/startbootstrap-small-business)
-[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-small-business.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-small-business)
-[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-small-business/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-small-business)
-[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-small-business/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-small-business?type=dev)
+            </style>
 
-## Download and Installation
+            <!-- Trigger the modal with a button -->
+            <img src="https://divisiondeariza.github.io/empty-chair-widgets/images/action_buttons/piloto.png" style="width:100%;"  data-toggle="modal" data-target="#myModal">
 
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/small-business/)
-* Install via npm: `npm i startbootstrap-small-business`
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-small-business.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-small-business)
 
-## Usage
+            <!-- Modal -->
 
-### Basic Usage
+            <div class="modal fade" id="myModal" role="dialog">
 
-After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+              <div class="modal-dialog modal-lg">
+              
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Modal Header</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                      <iframe frameborder="0" height="768" scrolling="no" src="" width="800"></iframe>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                
+              </div>
 
-### Advanced Usage
+            </div>
+            
+          </div>
+```
 
-After installation, run `npm install` and then run `gulp dev` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
 
-## Bugs and Issues
-
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-small-business/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/small-business/).
-
-## Custom Builds
-
-You can hire Start Bootstrap to create a custom build of any template, or create something from scratch using Bootstrap. For more information, visit the **[custom design services page](https://startbootstrap.com/bootstrap-design-services/)**.
-
-## About
-
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
-
-* https://startbootstrap.com
-* https://twitter.com/SBootstrap
-
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
-
-* http://davidmiller.io
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
-
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2017 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-small-business/blob/gh-pages/LICENSE) license.
+Para insertar el código en Drupal 7 se puede usar el módulo [Widgets](https://www.drupal.org/project/widgets),que permite crear widgets personalizados a partir de código HTML 
