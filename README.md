@@ -32,7 +32,11 @@ este widget funciona insertando el siguiente código en algún lugar de la pági
             </style>
 
             <!-- Trigger the modal with a button -->
-            <img src="https://divisiondeariza.github.io/empty-chair-widgets/images/action_buttons/piloto.png" style="width:100%;"  data-toggle="modal" data-target="#myModal">
+
+            <div>
+              <a data-toggle="modal" data-target="#myModal" style="position: absolute; width:300px; height:310px"></a>
+              <iframe class="embed-responsive-item" frameborder="0" src="https://divisiondeariza.github.io/empty-chair-widgets/#!/actionbtn" width="300" height="300" scrolling="no" ></iframe>
+            </div>
 
 
             <!-- Modal -->
