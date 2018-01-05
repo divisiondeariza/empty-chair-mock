@@ -35,7 +35,7 @@ este widget funciona insertando el siguiente código en algún lugar de la pági
 
             <div>
               <a data-toggle="modal" data-target="#myModal" style="position: absolute; width:300px; height:310px"></a>
-              <iframe class="embed-responsive-item" frameborder="0" src="https://divisiondeariza.github.io/empty-chair-widgets/#!/actionbtn" width="300" height="300" scrolling="no" ></iframe>
+              <iframe class="embed-responsive-item" frameborder="0" src="https://divisiondeariza.github.io/empty-chair-widgets/#!/actionbtn" width="300" height="310" scrolling="no" ></iframe>
             </div>
 
 
