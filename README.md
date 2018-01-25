@@ -15,7 +15,7 @@ este widget funciona insertando el siguiente código en algún lugar de la pági
                 $( document ).ready(function() {
                     $('.modal').on('show.bs.modal',function(){      
                       $(this).find('iframe').attr('src','https://divisiondeariza.github.io/empty-chair-widgets/#!/');                      
-                      /* $(this).find('iframe').attr('src','http://localhost:9000/#!/');*/
+                       // $(this).find('iframe').attr('src','http://localhost:9000/#!/');
                     });
                   });
             </script>
@@ -26,7 +26,21 @@ este widget funciona insertando el siguiente código en algún lugar de la pági
               }
 
               .modal-lg{
-                max-width: 1024px;
+                 max-width: none;
+                 width: 80%;
+              }
+
+              .wj-close-modal{
+                    color: #fff; 
+                    opacity: 1;
+                    padding-top: 0px!important;
+                    padding-bottom: 0px!important;
+                    font-size: 30px;
+
+              }
+
+              .wj-close-modal:hover {
+                color: #eee; 
               }
 
             </style>
@@ -48,7 +62,7 @@ este widget funciona insertando el siguiente código en algún lugar de la pági
                 <div class="modal-content">
                   <div class="modal-header">
                     <h4 class="modal-title">Modal Header</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close wj-close-modal" data-dismiss="modal">&times;</button>
                   </div>
                   <div class="modal-body">
                     <div class="embed-responsive embed-responsive-4by3"> 
